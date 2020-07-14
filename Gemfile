@@ -46,6 +46,9 @@ gem 'devise_token_auth'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# Environment
+gem "figaro"
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
@@ -68,6 +71,11 @@ group :development, :test do
   gem 'simplecov'
   # Deployment
   gem "capistrano", "~> 3.14", require: false
+  gem "capistrano-rails", "~> 1.5", require: false
+  gem 'rvm-capistrano'
+  # Ed25519 keys support
+  gem 'ed25519', '>= 1.2', '< 2.0'
+  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 end
 
 group :development do

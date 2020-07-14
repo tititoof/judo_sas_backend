@@ -7,5 +7,8 @@ module Api
       render json: PostDatatable.new(params)
     end
     
+    def email
+      ContactMailer.with(contact: params).new_contact_email.deliver_later
+    end
   end
 end

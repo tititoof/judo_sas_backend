@@ -1,0 +1,19 @@
+current directory: /usr/local/bundle/gems/bcrypt_pbkdf-1.0.1/ext/mri
+/usr/local/bin/ruby -I /usr/local/lib/ruby/2.7.0 -r ./siteconf20200714-7-gr2gal.rb extconf.rb
+creating Makefile
+
+current directory: /usr/local/bundle/gems/bcrypt_pbkdf-1.0.1/ext/mri
+make "DESTDIR=" clean
+
+current directory: /usr/local/bundle/gems/bcrypt_pbkdf-1.0.1/ext/mri
+make "DESTDIR="
+compiling bcrypt_pbkdf.c
+compiling bcrypt_pbkdf_ext.c
+compiling blowfish.c
+compiling explicit_bzero.c
+compiling hash_sha512.c
+linking shared-object bcrypt_pbkdf_ext.so
+
+current directory: /usr/local/bundle/gems/bcrypt_pbkdf-1.0.1/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_pbkdf_ext.so ./.gem.20200714-7-rdybvb
