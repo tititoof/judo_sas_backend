@@ -115,4 +115,7 @@ Rails.application.configure do
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
+
+  # Hosts configuration
+  config.hosts << "judo-sas.fr"
 end
