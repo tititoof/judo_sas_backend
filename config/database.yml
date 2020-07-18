@@ -85,6 +85,7 @@ test:
 #
 production:
   <<: *default
+  host: localhost
   database: <%= ENV['PROD_DATABASE_NAME'] %>
   username: <%= ENV['PROD_DATABASE_USER'] %>
   password: <%= ENV['PROD_DATABASE_PASSWORD'] %>
