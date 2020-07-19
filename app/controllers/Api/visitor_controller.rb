@@ -8,7 +8,16 @@ module Api
     end
     
     def email
-      ContactMailer.with(contact: params).new_contact_email.deliver_later
+      render json: ContactMailer.with(contact: email_params).new_contact_email.deliver_later
     end
+
+    private
+
+    def email_params
+      params.permit(
+        contact: %i[name email subject, message]
+      )
+    end
+
   end
 end
