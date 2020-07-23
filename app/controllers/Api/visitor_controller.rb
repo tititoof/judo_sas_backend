@@ -8,7 +8,7 @@ module Api
     end
     
     def email
-      render json: ContactMailer.with(contact: email_params).new_contact_email.deliver_later
+      render json: ContactMailer.with(email_params).new_contact_email.deliver_later
     end
 
     private
